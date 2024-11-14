@@ -1,0 +1,62 @@
+.settings-section {
+  padding: 20px;
+}
+.settings-section .section-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 24px;
+}
+.settings-section .settings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.settings-section button {
+  width: 20%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-size: large;
+}
+.settings-section .btn-change {
+  background-color: #FFFFFF;
+  color: black;
+}
+.settings-section .btn-change:hover {
+  background-color: #F0F0F0;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.modal-content input:focus {
+  outline: none;
+  border-color: black;
+}
+
+@media (max-width: 768px) {
+  .settings-section {
+    padding: 10px;
+  }
+  .settings-section .section-header {
+    font-size: 20px;
+  }
+  .settings-section button {
+    width: 100%;
+    font-size: medium;
+  }
+  .modal-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=Settings.css.map */

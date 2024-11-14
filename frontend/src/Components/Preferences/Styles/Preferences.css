@@ -1,0 +1,80 @@
+.preferences-section {
+  padding: 20px;
+}
+.preferences-section .preferences-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.preferences-section .preferences-header h3 {
+  font-size: 1rem;
+}
+.preferences-section .preferences-header:hover {
+  background-color: #F0F0F0;
+}
+.preferences-section .preferences-items-wrapper {
+  display: flex;
+  align-items: center;
+}
+.preferences-section .preferences-items-wrapper .arrow {
+  flex-grow: 1;
+  max-width: 10px;
+  margin: 10px;
+}
+.preferences-section .preferences-items-wrapper .arrow-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.preferences-section .preferences-items-wrapper .arrow-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.preferences-section .preferences-items-wrapper .preferences-items {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 0;
+  overflow-x: hidden;
+  position: relative;
+}
+.preferences-section .preferences-items-wrapper .preferences-items .preferences-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 80px;
+}
+.preferences-section .preferences-items-wrapper .preferences-items .preferences-item:hover {
+  background-color: #F0F0F0;
+}
+.preferences-section .preferences-items-wrapper .preferences-items .preferences-item span {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.preferences-section .preferences-items-wrapper .preferences-items .preferences-item p {
+  font-size: 18px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .preferences-section {
+    padding: 10px;
+  }
+  .preferences-section .preferences-header {
+    font-size: 20px;
+    padding: 8px;
+  }
+  .preferences-section .preferences-items .preferences-item {
+    font-size: medium;
+    min-width: 60px;
+  }
+}/*# sourceMappingURL=Preferences.css.map */

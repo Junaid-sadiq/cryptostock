@@ -1,0 +1,571 @@
+.StockDataWrapper .StockDataHeader {
+  display: grid;
+  grid-template-areas: "Ticker PriceHeader MarketCapHeader VolumeHeader";
+}
+.StockDataWrapper .StockDataHeader .StockBanner .StockTicker {
+  grid-area: Ticker;
+  width: 434px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
+}
+.StockDataWrapper .StockDataHeader .StockPrice {
+  grid-area: PriceHeader;
+  width: 100%;
+  height: 58px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+.StockDataWrapper .StockDataHeader .StockVolume {
+  grid-area: VolumeHeader;
+  width: 100%;
+  height: 58px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+.StockDataWrapper .StockDataHeader .StockMarketCap {
+  grid-area: MarketCapHeader;
+  width: 100%;
+  height: 58px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+.StockDataWrapper .StockDataHeader .StockRange {
+  grid-area: RangeHeader;
+  width: 100%;
+  height: 58px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+.StockDataWrapper .StockDataValues {
+  display: grid;
+  grid-template-areas: "FullName PriceValue MarketCapValue VolumeValue";
+}
+.StockDataWrapper .StockDataValues .StockFullName {
+  grid-area: FullName;
+  width: 434px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: rgba(128, 128, 128, 0.8);
+}
+.StockDataWrapper .StockDataValues .StockPrice {
+  grid-area: PriceValue;
+  width: 100%;
+  height: 38px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+.StockDataWrapper .StockDataValues .StockVolume {
+  grid-area: VolumeValue;
+  width: 100%;
+  height: 58px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+.StockDataWrapper .StockDataValues .StockMarketCap {
+  grid-area: MarketCapValue;
+  width: 100%;
+  height: 58px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+.StockDataWrapper .StockDataValues .StockRange {
+  grid-area: RangeValue;
+  width: 100%;
+  height: 58px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+.StockDataWrapper .StockDataOverview .StockOverView {
+  width: 247px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+.StockDataWrapper .StockDataOverview .StockDataRange {
+  width: 322px;
+  height: 29px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+@media screen and (max-height: 414px) {
+  .StockDataWrapper {
+    display: grid;
+    grid-template-areas: "FullName" "Ticker" "MarketCapHeader" "MarketCapValue" "VolumeHeader" "VolumeValue" "PriceHeader" "PriceValue";
+  }
+  .StockDataWrapper .StockDataHeader {
+    display: contents;
+  }
+  .StockDataWrapper .StockDataHeader .StockBanner .StockFullName {
+    grid-area: FullName;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: rgba(128, 128, 128, 0.8);
+  }
+  .StockDataWrapper .StockDataHeader .StockPrice {
+    grid-area: PriceHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockVolume {
+    grid-area: VolumeHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockMarketCap {
+    grid-area: MarketCapHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockRange {
+    grid-area: RangeHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues {
+    display: contents;
+  }
+  .StockDataWrapper .StockDataValues .StockFullName {
+    grid-area: Ticker;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: rgba(128, 128, 128, 0.8);
+  }
+  .StockDataWrapper .StockDataValues .StockPrice {
+    grid-area: PriceValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockVolume {
+    grid-area: VolumeValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockMarketCap {
+    grid-area: MarketCapValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockRange {
+    grid-area: RangeValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataGraph {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .StockDataWrapper {
+    display: grid;
+    grid-template-areas: "FullName" "Ticker" "MarketCapHeader" "MarketCapValue" "VolumeHeader" "VolumeValue" "PriceHeader" "PriceValue";
+  }
+  .StockDataWrapper .StockDataHeader {
+    display: contents;
+  }
+  .StockDataWrapper .StockDataHeader .StockBanner .StockFullName {
+    grid-area: FullName;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: rgba(128, 128, 128, 0.8);
+  }
+  .StockDataWrapper .StockDataHeader .StockPrice {
+    grid-area: PriceHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockVolume {
+    grid-area: VolumeHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockMarketCap {
+    grid-area: MarketCapHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockRange {
+    grid-area: RangeHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues {
+    display: contents;
+  }
+  .StockDataWrapper .StockDataValues .StockFullName {
+    grid-area: Ticker;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: rgba(128, 128, 128, 0.8);
+  }
+  .StockDataWrapper .StockDataValues .StockPrice {
+    grid-area: PriceValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockVolume {
+    grid-area: VolumeValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockMarketCap {
+    grid-area: MarketCapValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockRange {
+    grid-area: RangeValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataGraph {
+    width: 80%;
+  }
+}
+@media screen and (min-height: 768px) and (max-height: 1024px) {
+  .StockDataWrapper {
+    display: grid;
+    grid-template-areas: "FullName" "Ticker" "MarketCapHeader" "MarketCapValue" "VolumeHeader" "VolumeValue" "PriceHeader" "PriceValue";
+  }
+  .StockDataWrapper .StockDataHeader {
+    display: contents;
+  }
+  .StockDataWrapper .StockDataHeader .StockBanner .StockFullName {
+    grid-area: FullName;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: rgba(128, 128, 128, 0.8);
+  }
+  .StockDataWrapper .StockDataHeader .StockPrice {
+    grid-area: PriceHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockVolume {
+    grid-area: VolumeHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockMarketCap {
+    grid-area: MarketCapHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockRange {
+    grid-area: RangeHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues {
+    display: contents;
+  }
+  .StockDataWrapper .StockDataValues .StockFullName {
+    grid-area: Ticker;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: rgba(128, 128, 128, 0.8);
+  }
+  .StockDataWrapper .StockDataValues .StockPrice {
+    grid-area: PriceValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockVolume {
+    grid-area: VolumeValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockMarketCap {
+    grid-area: MarketCapValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockRange {
+    grid-area: RangeValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataGraph {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .StockDataWrapper {
+    display: grid;
+    grid-template-areas: "FullName" "Ticker" "MarketCapHeader" "MarketCapValue" "VolumeHeader" "VolumeValue" "PriceHeader" "PriceValue";
+  }
+  .StockDataWrapper .StockDataHeader {
+    display: contents;
+  }
+  .StockDataWrapper .StockDataHeader .StockBanner .StockFullName {
+    grid-area: FullName;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: rgba(128, 128, 128, 0.8);
+  }
+  .StockDataWrapper .StockDataHeader .StockPrice {
+    grid-area: PriceHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockVolume {
+    grid-area: VolumeHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockMarketCap {
+    grid-area: MarketCapHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataHeader .StockRange {
+    grid-area: RangeHeader;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues {
+    display: contents;
+  }
+  .StockDataWrapper .StockDataValues .StockFullName {
+    grid-area: Ticker;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: rgba(128, 128, 128, 0.8);
+  }
+  .StockDataWrapper .StockDataValues .StockPrice {
+    grid-area: PriceValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockVolume {
+    grid-area: VolumeValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockMarketCap {
+    grid-area: MarketCapValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataWrapper .StockDataValues .StockRange {
+    grid-area: RangeValue;
+    width: 100%;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+  .StockDataGraph {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Stock.css.map */

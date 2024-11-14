@@ -1,0 +1,92 @@
+// Preferences.scss
+$modal-background: white;
+$modal-border-radius: 10px;
+$modal-padding: 20px;
+$button-background: #FFFFFF;
+$button-hover-background: #F0F0F0;
+$button-color: black;
+$button-border-color: black;
+$button-font-size: large;
+.preferences-section {
+    padding: 20px;
+    //margin-bottom: 20px;
+    .preferences-header {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        h3 {
+            font-size: 1rem;
+        }
+        padding: 10px;
+        background-color: $modal-background;
+        border-radius: $modal-border-radius;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        &:hover {
+            background-color: $button-hover-background;
+        }
+    }
+    .preferences-items-wrapper {
+        display: flex;
+        align-items: center;
+        .arrow {
+            flex-grow: 1;
+            max-width: 10px;
+            margin: 10px;
+        }
+        .arrow-left {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .arrow-right {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .preferences-items {
+            flex-grow: 3;
+            display: flex;
+            flex-direction: row; // Horizontal layout
+            gap: 10px;
+            padding: 10px 0;
+            overflow-x: hidden; // Hide overflow for carousel effect
+            position: relative;
+            .preferences-item {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: $modal-border-radius;
+                cursor: pointer;
+                transition: background-color 0.2s;
+                min-width: 80px; // Adjust the width to fit icons better
+                &:hover {
+                    background-color: $button-hover-background;
+                }
+                span {
+                    font-size: 24px;
+                    margin-right: 10px;
+                }
+                p {
+                    font-size: 18px;
+                    color: $button-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .preferences-section {
+        padding: 10px;
+        .preferences-header {
+            font-size: 20px;
+            padding: 8px;
+        }
+        .preferences-items {
+            .preferences-item {
+                font-size: medium;
+                min-width: 60px; // Smaller icons for smaller screens
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+$modal-background: white;
+$modal-border-radius: 10px;
+$modal-padding: 20px;
+$button-background: #FFFFFF;
+$button-hover-background: #F0F0F0;
+$button-color: black;
+$button-border-color: black;
+$button-font-size: large;
+$input-padding: 10px;
+$input-border-radius: 5px;
+.settings-section {
+    padding: 20px;
+    .section-header {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 24px;
+    }
+    .settings {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    button {
+        width: 20%;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: $modal-border-radius;
+        font-size: $button-font-size;
+    }
+    .btn-change {
+        background-color: $button-background;
+        color: $button-color;
+        &:hover {
+            background-color: $button-hover-background;
+        }
+    }
+}
+
+.modal-content {
+    background-color: $modal-background;
+    border-radius: $modal-border-radius;
+    padding: $modal-padding;
+    input {
+        width: 100%;
+        padding: $input-padding;
+        margin-bottom: 10px;
+        border-radius: $input-border-radius;
+        border: 1px solid #ccc;
+        &:focus {
+            outline: none;
+            border-color: $button-color;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .settings-section {
+        padding: 10px;
+        .section-header {
+            font-size: 20px;
+        }
+        button {
+            width: 100%;
+            font-size: medium;
+        }
+    }
+    .modal-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

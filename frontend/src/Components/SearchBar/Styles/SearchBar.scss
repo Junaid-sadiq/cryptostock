@@ -1,0 +1,52 @@
+.search-bar-wrapper{
+    padding-top: 0.5rem;
+    .searchBar{
+        background: rgba(232, 232, 232, 0.46);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        width: 25rem;
+        height: 38px;
+        // width: max-content;
+        border-radius: 10px;
+        color: rgba(29, 29, 29, 0.46);
+    }
+}
+
+@media screen and (max-width: 736px)
+{
+    .search-bar-wrapper{
+        padding-top: 0.5rem;
+        .searchBar{
+            background: rgba(232, 232, 232, 0.46);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            width: max-content;
+            height: 38px;
+            border-radius: 10px;
+            color: rgba(29, 29, 29, 0.46);
+        }
+    }
+}
+
+@media screen and (max-height: 414px)
+{
+    .search-bar-wrapper{
+        padding-top: 0.5rem;
+        .searchBar{
+            background: rgba(232, 232, 232, 0.46);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            height: 38px;
+            width: max-content;
+            border-radius: 10px;
+            color: rgba(29, 29, 29, 0.46);
+        }
+    }
+}
+

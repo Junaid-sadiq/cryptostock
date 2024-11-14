@@ -1,0 +1,91 @@
+.page-title {
+  margin-right: 100%;
+  margin-bottom: 5%;
+  color: #000000;
+}
+
+.favorite-cryptos {
+  display: flex;
+  overflow-x: scroll;
+}
+.favorite-cryptos .favorite-crypto {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.favorite-cryptos .favorite-crypto-ticker {
+  width: 102px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+.favorite-cryptos .favorite-cryptos-carousel {
+  width: 100%;
+}
+.favorite-cryptos .favorite-cryptos-carousel .active {
+  display: flex;
+}
+.favorite-cryptos .favorite-cryptos-carousel .crypto-block {
+  display: block;
+  margin-left: 11%;
+  margin-bottom: 2%;
+}
+.favorite-cryptos .favorite-cryptos-carousel .carousel-indicators {
+  display: none;
+}
+.favorite-cryptos .favorite-cryptos-carousel .carousel-control-prev-icon {
+  color: black;
+}
+.favorite-cryptos .crypto-block {
+  display: block;
+  margin-left: 9%;
+  margin-bottom: 2%;
+}
+.favorite-cryptos .crypto-block .favorite-crypto-ticker {
+  width: 102px;
+  height: 38px;
+}
+
+.favorite-crypto-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.MarkCrypto:hover {
+  cursor: pointer;
+}
+
+.table-responsive {
+  overflow-x: scroll;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  display: none;
+}
+
+@media screen and (max-width: 736px) {
+  .favorite-cryptos {
+    overflow-x: hidden;
+    display: flex;
+  }
+  .favorite-crypto {
+    border-style: solid;
+  }
+  .favorite-cryptos-carousel {
+    display: none;
+  }
+}
+@media screen and (max-height: 414px) {
+  .favorite-cryptos {
+    overflow-x: hidden;
+    display: flex;
+  }
+}/*# sourceMappingURL=Cryptos.css.map */

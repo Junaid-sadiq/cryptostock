@@ -1,0 +1,83 @@
+.page-title {
+  margin-right: 100%;
+  width: 188px;
+  height: 38px;
+  left: 69px;
+  top: 170px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
+}
+
+.favorite-stocks {
+  display: flex;
+  overflow-x: scroll;
+}
+.favorite-stocks .favorite-stock {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.favorite-stocks .favorite-stock-ticker {
+  /* NVDA */
+  width: 102px;
+  height: 38px;
+  left: 118px;
+  top: 357px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+.favorite-stocks .favorite-stocks-carousel {
+  width: 100%;
+}
+.favorite-stocks .favorite-stocks-carousel .active {
+  display: flex;
+}
+.favorite-stocks .favorite-stocks-carousel .stock-block {
+  display: block;
+  margin-left: 11%;
+}
+.favorite-stocks .favorite-stocks-carousel .carousel-indicators {
+  display: none;
+}
+.favorite-stocks .favorite-stocks-carousel .carousel-control-prev-icon {
+  color: black;
+}
+
+.MarkStock:hover {
+  cursor: pointer;
+}
+
+.table-responsive {
+  overflow-x: scroll;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  display: none;
+}
+
+@media screen and (max-width: 736px) {
+  .favorite-stocks {
+    overflow-x: hidden;
+    display: flex;
+  }
+  .favorite-stock {
+    border-style: solid;
+  }
+  .favorite-stocks-carousel {
+    display: none;
+  }
+}
+@media screen and (max-height: 414px) {
+  .favorite-stocks {
+    overflow-x: hidden;
+    display: flex;
+  }
+}/*# sourceMappingURL=Stocks.css.map */

@@ -1,0 +1,40 @@
+.Header {
+  background-color: white;
+}
+.Header .HeaderBrand {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
+}
+.Header .HeaderLink {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #23273C;
+}
+
+@media screen and (max-width: 736px) {
+    .Header {
+        background-color: white;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+    .Header .HeaderBrand {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 58px;
+        color: #000000;
+    }
+    .Header .HeaderLink {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        color: #23273C;
+    }
+}
+
+
+/*# sourceMappingURL=Header.css.map */

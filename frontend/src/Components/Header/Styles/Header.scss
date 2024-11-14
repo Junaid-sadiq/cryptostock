@@ -1,0 +1,41 @@
+.Header{
+    background-color: white;
+    .HeaderBrand{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #000000;
+    }
+
+    .HeaderLink{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        color: #23273C;
+    }
+}
+
+@media screen and (max-width: 736px)
+{
+
+    .Header{
+        background-color: white;
+        height: fit-content;
+        .HeaderBrand{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 58px;
+            color: #000000;
+        }
+
+        .HeaderLink{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            color: #23273C;
+        }
+    }
+
+}
